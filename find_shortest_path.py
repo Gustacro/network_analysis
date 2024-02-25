@@ -38,7 +38,8 @@ def boundary_constructor(orig_x, orig_y, dest_x, dest_y):
 def getting_osm(bbox, network_type, truncate_edges):
     """Retrieve OSM data (roads, edges, nodes) for a given bounding box and network type."""
     G = ox.graph_from_polygon(bbox, retain_all=False, network_type=network_type, truncate_by_edge=truncate_edges)
-    G = ox.add_edge_speeds(G)
+    # hwy_speed = {'primary': 64} # If fixed speed is needed or missed it, add hwy_ speed as *param in add_edge_speeds() function
+    G = ox.add_edge_speeds(G) # <- add here hwy_speed
     G = ox.add_edge_travel_times(G)
     roads = ox.graph_to_gdfs(G, nodes=False, edges=True)
     return G, roads
