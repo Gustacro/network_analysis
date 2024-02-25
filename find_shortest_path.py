@@ -58,6 +58,14 @@ def shortest_path(G, orig_node_id, dest_node_id, weight):
         print(e)
     return route
 
+def find_length_and_time(G, travel_length, travel_time):
+    try:
+        route_length = int(sum(ox.utils_graph.route_to_gdf(G, travel_length, "length")["length"]))
+        route_time = int(sum(ox.utils_graph.route_to_gdf(G, travel_time, "travel_time")["travel_time"]))
+    except Exception as e:
+        print(f'Error: {e}')
+    return route_length, route_time
+
 def route_plotting(G, travel_length, travel_time):
     """Plot the shortest path lenght and shortest path time."""
     if travel_length and travel_time:
@@ -95,7 +103,9 @@ def main():
     # find shortest path
     travel_length = shortest_path(G, orig_node_id, dest_node_id, weight='length')
     travel_time = shortest_path(G, orig_node_id, dest_node_id, weight='travel_time')
-    print(f"Shortest travel length:{travel_length: .2f} meters and takes {round(travel_time)} minutes") # NOT SURE IF CORRECT (travel_time/1.6 only for walk network type) 
+    # find route length and route time
+    route_length, route_time = find_length_and_time(G, travel_length, travel_time)
+    print(f"Shortest travel length:{(route_length * 0.000621): .1f} miles and takes {(route_time/60 +0.5): .1f} minutes") 
     # plot routes
     route_plotting(G, travel_length, travel_time)
 
