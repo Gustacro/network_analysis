@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_74736162bcf442198b2d4d40a544bc44 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_74736162bcf442198b2d4d40a544bc44" ></div>
+        
+</body>
+<script>    
+    
+            var map_74736162bcf442198b2d4d40a544bc44 = L.map(
+                "map_74736162bcf442198b2d4d40a544bc44",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9e973575d35f421bb4e157248675af3a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+            var poly_line_e0ce6b06cf19446da006de9a9e8e06c7 = L.polyline(
+                [[41.662946, -83.619567], [41.6646101, -83.6196249], [41.664669, -83.619627]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_11fdff42e2024df2b555dd65db80d388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ed8cf07b5814d4fa8b784b1dfc0d02f = $(`<div id="html_5ed8cf07b5814d4fa8b784b1dfc0d02f" style="width: 100.0%; height: 100.0%;">"Pemberton Drive"</div>`)[0];
+            popup_11fdff42e2024df2b555dd65db80d388.setContent(html_5ed8cf07b5814d4fa8b784b1dfc0d02f);
+        
+
+        poly_line_e0ce6b06cf19446da006de9a9e8e06c7.bindPopup(popup_11fdff42e2024df2b555dd65db80d388)
+        ;
+
+        
+    
+    
+            var poly_line_c22f424d306c43cc86ca47ea404b88a0 = L.polyline(
+                [[41.664669, -83.619627], [41.666669, -83.619667]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_9020d18b6883405092b534f4b68210ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b32e7ddec4043168ac6009519d7f002 = $(`<div id="html_5b32e7ddec4043168ac6009519d7f002" style="width: 100.0%; height: 100.0%;">"Pemberton Drive"</div>`)[0];
+            popup_9020d18b6883405092b534f4b68210ae.setContent(html_5b32e7ddec4043168ac6009519d7f002);
+        
+
+        poly_line_c22f424d306c43cc86ca47ea404b88a0.bindPopup(popup_9020d18b6883405092b534f4b68210ae)
+        ;
+
+        
+    
+    
+            var poly_line_57f23a93cfd84ffdbe5066940adfd49b = L.polyline(
+                [[41.666669, -83.619667], [41.6667399, -83.6196691], [41.668521, -83.619723]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_72eb1f7a45c34d388a84937c4751fee2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7909495845364eeebad6cf3125e0cb4f = $(`<div id="html_7909495845364eeebad6cf3125e0cb4f" style="width: 100.0%; height: 100.0%;">"Pemberton Drive"</div>`)[0];
+            popup_72eb1f7a45c34d388a84937c4751fee2.setContent(html_7909495845364eeebad6cf3125e0cb4f);
+        
+
+        poly_line_57f23a93cfd84ffdbe5066940adfd49b.bindPopup(popup_72eb1f7a45c34d388a84937c4751fee2)
+        ;
+
+        
+    
+    
+            var poly_line_d5f86d2230c545fdabc631c79a53e6e7 = L.polyline(
+                [[41.668521, -83.619723], [41.668714, -83.620018]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_5ece627f0d1e4787bf81a9b41bc1f6bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d0b722fca024a1896feb6bf66f86095 = $(`<div id="html_3d0b722fca024a1896feb6bf66f86095" style="width: 100.0%; height: 100.0%;">"Pemberton Drive"</div>`)[0];
+            popup_5ece627f0d1e4787bf81a9b41bc1f6bf.setContent(html_3d0b722fca024a1896feb6bf66f86095);
+        
+
+        poly_line_d5f86d2230c545fdabc631c79a53e6e7.bindPopup(popup_5ece627f0d1e4787bf81a9b41bc1f6bf)
+        ;
+
+        
+    
+    
+            var poly_line_ab688436009e4c628f6361d18dbb676f = L.polyline(
+                [[41.668714, -83.620018], [41.668696, -83.620531], [41.668643, -83.621047]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_3bd225fa948144bfaf8e4790e4129e23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06327972b5024c759803d3c38fba394d = $(`<div id="html_06327972b5024c759803d3c38fba394d" style="width: 100.0%; height: 100.0%;">"Darlington Road"</div>`)[0];
+            popup_3bd225fa948144bfaf8e4790e4129e23.setContent(html_06327972b5024c759803d3c38fba394d);
+        
+
+        poly_line_ab688436009e4c628f6361d18dbb676f.bindPopup(popup_3bd225fa948144bfaf8e4790e4129e23)
+        ;
+
+        
+    
+    
+            var poly_line_bc5c4c035d9e4e3096c990075f7833a1 = L.polyline(
+                [[41.668643, -83.621047], [41.6694442, -83.6210678]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_f41f8cfffeb84a8ba56dc68d2ff36c2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4de50692cabc46088f83bddd0b1e3ed8 = $(`<div id="html_4de50692cabc46088f83bddd0b1e3ed8" style="width: 100.0%; height: 100.0%;">"Densmore Drive"</div>`)[0];
+            popup_f41f8cfffeb84a8ba56dc68d2ff36c2c.setContent(html_4de50692cabc46088f83bddd0b1e3ed8);
+        
+
+        poly_line_bc5c4c035d9e4e3096c990075f7833a1.bindPopup(popup_f41f8cfffeb84a8ba56dc68d2ff36c2c)
+        ;
+
+        
+    
+    
+            var poly_line_f920cc440d5e4647ba12f721cad01dcc = L.polyline(
+                [[41.6694442, -83.6210678], [41.669849, -83.6210783]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_281ad5951c284592a190aaa16a4290ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6de07dbb72e94b0da3894e304e53e08c = $(`<div id="html_6de07dbb72e94b0da3894e304e53e08c" style="width: 100.0%; height: 100.0%;">"Densmore Drive"</div>`)[0];
+            popup_281ad5951c284592a190aaa16a4290ca.setContent(html_6de07dbb72e94b0da3894e304e53e08c);
+        
+
+        poly_line_f920cc440d5e4647ba12f721cad01dcc.bindPopup(popup_281ad5951c284592a190aaa16a4290ca)
+        ;
+
+        
+    
+    
+            var poly_line_3c242769d84642e3b3469d14a0f0a3ff = L.polyline(
+                [[41.669849, -83.6210783], [41.67063, -83.621104]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_989f5855e57b4bb59ae3b18d885adeb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da820c70087540579066897a495b185d = $(`<div id="html_da820c70087540579066897a495b185d" style="width: 100.0%; height: 100.0%;">"Densmore Drive"</div>`)[0];
+            popup_989f5855e57b4bb59ae3b18d885adeb8.setContent(html_da820c70087540579066897a495b185d);
+        
+
+        poly_line_3c242769d84642e3b3469d14a0f0a3ff.bindPopup(popup_989f5855e57b4bb59ae3b18d885adeb8)
+        ;
+
+        
+    
+    
+            var poly_line_38f6d5cfe99749caaaf581381cf5da49 = L.polyline(
+                [[41.67063, -83.621104], [41.670714, -83.6211006]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_29f5d3de4b6a4175966bd2761a1b15e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7b68a4295dc4114aa91b0143fe4c68a = $(`<div id="html_d7b68a4295dc4114aa91b0143fe4c68a" style="width: 100.0%; height: 100.0%;">"Densmore Drive"</div>`)[0];
+            popup_29f5d3de4b6a4175966bd2761a1b15e1.setContent(html_d7b68a4295dc4114aa91b0143fe4c68a);
+        
+
+        poly_line_38f6d5cfe99749caaaf581381cf5da49.bindPopup(popup_29f5d3de4b6a4175966bd2761a1b15e1)
+        ;
+
+        
+    
+    
+            var poly_line_6e6d0d0952e643fdb5077bd32d87b7eb = L.polyline(
+                [[41.670714, -83.6211006], [41.6728592, -83.621182], [41.672911, -83.621184]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_f63f3a2ac6b04012a0fbe24027128535 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7570ffe68a13462a90187d079175d148 = $(`<div id="html_7570ffe68a13462a90187d079175d148" style="width: 100.0%; height: 100.0%;">"Densmore Drive"</div>`)[0];
+            popup_f63f3a2ac6b04012a0fbe24027128535.setContent(html_7570ffe68a13462a90187d079175d148);
+        
+
+        poly_line_6e6d0d0952e643fdb5077bd32d87b7eb.bindPopup(popup_f63f3a2ac6b04012a0fbe24027128535)
+        ;
+
+        
+    
+    
+            var poly_line_a63b58fb0577422b9d5c62c8295d3dac = L.polyline(
+                [[41.672911, -83.621184], [41.6744496, -83.621249], [41.6751025, -83.6212727]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_1dedb0ce0c204d53851773a3e7cb1bc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a41c0028162349bbaf2007ab549b019d = $(`<div id="html_a41c0028162349bbaf2007ab549b019d" style="width: 100.0%; height: 100.0%;">"Densmore Drive"</div>`)[0];
+            popup_1dedb0ce0c204d53851773a3e7cb1bc0.setContent(html_a41c0028162349bbaf2007ab549b019d);
+        
+
+        poly_line_a63b58fb0577422b9d5c62c8295d3dac.bindPopup(popup_1dedb0ce0c204d53851773a3e7cb1bc0)
+        ;
+
+        
+    
+    
+            var poly_line_67673f5d1db647639eb63d3553f58150 = L.polyline(
+                [[41.6751025, -83.6212727], [41.6751018, -83.621309], [41.6750798, -83.6224276], [41.675077, -83.62257]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_d5ee5df0207549f0bf5e577b8112dc4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba59719bba4442abb54101a8762509f6 = $(`<div id="html_ba59719bba4442abb54101a8762509f6" style="width: 100.0%; height: 100.0%;">"Hughes Drive"</div>`)[0];
+            popup_d5ee5df0207549f0bf5e577b8112dc4c.setContent(html_ba59719bba4442abb54101a8762509f6);
+        
+
+        poly_line_67673f5d1db647639eb63d3553f58150.bindPopup(popup_d5ee5df0207549f0bf5e577b8112dc4c)
+        ;
+
+        
+    
+    
+            var poly_line_f337ee2536e54f0682d57aa38de88e77 = L.polyline(
+                [[41.675077, -83.62257], [41.6752248, -83.6225807], [41.6757992, -83.6226075], [41.6764719, -83.6226388]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_605bae878aa54c99aa2f8579e3a9e8b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab833ba9bb2c4c8f833592329afd5b47 = $(`<div id="html_ab833ba9bb2c4c8f833592329afd5b47" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_605bae878aa54c99aa2f8579e3a9e8b9.setContent(html_ab833ba9bb2c4c8f833592329afd5b47);
+        
+
+        poly_line_f337ee2536e54f0682d57aa38de88e77.bindPopup(popup_605bae878aa54c99aa2f8579e3a9e8b9)
+        ;
+
+        
+    
+    
+            var poly_line_7226f860fef147958586167511a4e509 = L.polyline(
+                [[41.6764719, -83.6226388], [41.677232, -83.6226617], [41.6773625, -83.6226656]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_30ea1a5b30ff4c1cb180ccff06634de6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fd1254caf1643ffaf9556a7a631d5ff = $(`<div id="html_5fd1254caf1643ffaf9556a7a631d5ff" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_30ea1a5b30ff4c1cb180ccff06634de6.setContent(html_5fd1254caf1643ffaf9556a7a631d5ff);
+        
+
+        poly_line_7226f860fef147958586167511a4e509.bindPopup(popup_30ea1a5b30ff4c1cb180ccff06634de6)
+        ;
+
+        
+    
+    
+            var poly_line_37fc79efdc424d7884519aea1e65d8ca = L.polyline(
+                [[41.6773625, -83.6226656], [41.6779871, -83.62269], [41.6781332, -83.6226957], [41.6781583, -83.6226967], [41.6783546, -83.6227043], [41.6787873, -83.6227212], [41.6789266, -83.6227266], [41.6795254, -83.62275]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_777d16d220374fa98f4107a4cd86a0a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e91096c66f994d0c8ff28f6ac92435ea = $(`<div id="html_e91096c66f994d0c8ff28f6ac92435ea" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_777d16d220374fa98f4107a4cd86a0a2.setContent(html_e91096c66f994d0c8ff28f6ac92435ea);
+        
+
+        poly_line_37fc79efdc424d7884519aea1e65d8ca.bindPopup(popup_777d16d220374fa98f4107a4cd86a0a2)
+        ;
+
+        
+    
+    
+            var poly_line_7b382e9aa1b34a55b3730d411db0f7a8 = L.polyline(
+                [[41.6795254, -83.62275], [41.679561, -83.6227088], [41.6795791, -83.622692], [41.679599, -83.6226839], [41.679671, -83.6226857], [41.6796877, -83.6226967], [41.6797063, -83.6227202], [41.6797231, -83.6227618]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_d63c270e904646bbb3dfd042caef73ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f80341ea6bf341febd6a41f80daf7715 = $(`<div id="html_f80341ea6bf341febd6a41f80daf7715" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_d63c270e904646bbb3dfd042caef73ad.setContent(html_f80341ea6bf341febd6a41f80daf7715);
+        
+
+        poly_line_7b382e9aa1b34a55b3730d411db0f7a8.bindPopup(popup_d63c270e904646bbb3dfd042caef73ad)
+        ;
+
+        
+    
+    
+            var poly_line_1134c0a9111e44e5a5cf6c88fbfdee5b = L.polyline(
+                [[41.6797231, -83.6227618], [41.680294, -83.62278], [41.6813551, -83.6228213]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_816d0ee54f7d4dc4b1322dc1311d7466 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_663a69992e324534a0cf450e11e3a43a = $(`<div id="html_663a69992e324534a0cf450e11e3a43a" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_816d0ee54f7d4dc4b1322dc1311d7466.setContent(html_663a69992e324534a0cf450e11e3a43a);
+        
+
+        poly_line_1134c0a9111e44e5a5cf6c88fbfdee5b.bindPopup(popup_816d0ee54f7d4dc4b1322dc1311d7466)
+        ;
+
+        
+    
+    
+            var poly_line_46496862814e46a094a729fc318892b4 = L.polyline(
+                [[41.6813551, -83.6228213], [41.6813955, -83.6227725], [41.681412, -83.6227611], [41.6814282, -83.6227559], [41.6815104, -83.6227608], [41.6815307, -83.6227698], [41.6815422, -83.6227845], [41.6815612, -83.6228266]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_8a2525c33a3448fe88c790fc665ea822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8250ff69b1ec4f88975776b552e4bff8 = $(`<div id="html_8250ff69b1ec4f88975776b552e4bff8" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_8a2525c33a3448fe88c790fc665ea822.setContent(html_8250ff69b1ec4f88975776b552e4bff8);
+        
+
+        poly_line_46496862814e46a094a729fc318892b4.bindPopup(popup_8a2525c33a3448fe88c790fc665ea822)
+        ;
+
+        
+    
+    
+            var poly_line_63e1172dba214e32a546691fb051af4c = L.polyline(
+                [[41.6815612, -83.6228266], [41.6820247, -83.6228418]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_92fec4a226824fa3be03f715949df981 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a322f0045374ae9a081427456abf50e = $(`<div id="html_7a322f0045374ae9a081427456abf50e" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_92fec4a226824fa3be03f715949df981.setContent(html_7a322f0045374ae9a081427456abf50e);
+        
+
+        poly_line_63e1172dba214e32a546691fb051af4c.bindPopup(popup_92fec4a226824fa3be03f715949df981)
+        ;
+
+        
+    
+    
+            var poly_line_de6aeff4b32e433abde04ec2af92c79c = L.polyline(
+                [[41.6820247, -83.6228418], [41.6821325, -83.6227952], [41.6822488, -83.6227997], [41.682422, -83.622854]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_d107fc8bec41443cb107c1fa41f61f55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20bd4dbf1ace48aeb052cecb3a02c7db = $(`<div id="html_20bd4dbf1ace48aeb052cecb3a02c7db" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_d107fc8bec41443cb107c1fa41f61f55.setContent(html_20bd4dbf1ace48aeb052cecb3a02c7db);
+        
+
+        poly_line_de6aeff4b32e433abde04ec2af92c79c.bindPopup(popup_d107fc8bec41443cb107c1fa41f61f55)
+        ;
+
+        
+    
+    
+            var poly_line_2b74aa3f25444c619808f10ea75c4c28 = L.polyline(
+                [[41.682422, -83.622854], [41.6830301, -83.6228789], [41.6833872, -83.622893], [41.6834533, -83.6228958], [41.6837635, -83.6229089], [41.6841602, -83.6229193], [41.6842643, -83.622922], [41.6846214, -83.6229314], [41.6850965, -83.6229373]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_53ebceba4a1a4acb8d1304cc9d16dc09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88e772a3b4a847c7992e8205ec5f3809 = $(`<div id="html_88e772a3b4a847c7992e8205ec5f3809" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_53ebceba4a1a4acb8d1304cc9d16dc09.setContent(html_88e772a3b4a847c7992e8205ec5f3809);
+        
+
+        poly_line_2b74aa3f25444c619808f10ea75c4c28.bindPopup(popup_53ebceba4a1a4acb8d1304cc9d16dc09)
+        ;
+
+        
+    
+    
+            var poly_line_827be8f7e6f74c76ab6814ac54bf758e = L.polyline(
+                [[41.6850965, -83.6229373], [41.6854343, -83.6229552], [41.6854916, -83.6229572], [41.68566, -83.6229652], [41.6858763, -83.6229759], [41.686278, -83.6229958]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_18624adc10a44137b7b4f3654f3c9e4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ef2067fb44f48219490eefda1a3fa81 = $(`<div id="html_3ef2067fb44f48219490eefda1a3fa81" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_18624adc10a44137b7b4f3654f3c9e4a.setContent(html_3ef2067fb44f48219490eefda1a3fa81);
+        
+
+        poly_line_827be8f7e6f74c76ab6814ac54bf758e.bindPopup(popup_18624adc10a44137b7b4f3654f3c9e4a)
+        ;
+
+        
+    
+    
+            var poly_line_0f81e3ac23074158adb86db6fbc11bed = L.polyline(
+                [[41.686278, -83.6229958], [41.687252, -83.623051]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_3ee04f3c9f9a479d9bbfaaef1b749c7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e116f89082e4c9e888706b11ecc477a = $(`<div id="html_6e116f89082e4c9e888706b11ecc477a" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_3ee04f3c9f9a479d9bbfaaef1b749c7f.setContent(html_6e116f89082e4c9e888706b11ecc477a);
+        
+
+        poly_line_0f81e3ac23074158adb86db6fbc11bed.bindPopup(popup_3ee04f3c9f9a479d9bbfaaef1b749c7f)
+        ;
+
+        
+    
+    
+            var poly_line_009e9988555a407b8189397507f1692d = L.polyline(
+                [[41.687252, -83.623051], [41.6874389, -83.6230587], [41.6875125, -83.6230591]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_3abe80c723ab4eb3b80b767f1c36c275 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2f02b4a80fd4497b5adfd94d98c29d5 = $(`<div id="html_c2f02b4a80fd4497b5adfd94d98c29d5" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_3abe80c723ab4eb3b80b767f1c36c275.setContent(html_c2f02b4a80fd4497b5adfd94d98c29d5);
+        
+
+        poly_line_009e9988555a407b8189397507f1692d.bindPopup(popup_3abe80c723ab4eb3b80b767f1c36c275)
+        ;
+
+        
+    
+    
+            var poly_line_b0e62e80e92943ae87cd7fada8e43fe9 = L.polyline(
+                [[41.6875125, -83.6230591], [41.6876085, -83.6229872], [41.687716, -83.6229946], [41.687934, -83.6230097], [41.6883002, -83.6230351], [41.6885493, -83.6230676], [41.6887648, -83.6230763], [41.6891269, -83.623091], [41.6892652, -83.6230966]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_665309235490470d989dfd3f751bf8fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b80d92f93923408abba925aebfbd28d0 = $(`<div id="html_b80d92f93923408abba925aebfbd28d0" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_665309235490470d989dfd3f751bf8fd.setContent(html_b80d92f93923408abba925aebfbd28d0);
+        
+
+        poly_line_b0e62e80e92943ae87cd7fada8e43fe9.bindPopup(popup_665309235490470d989dfd3f751bf8fd)
+        ;
+
+        
+    
+    
+            var poly_line_5e1c8d5a7091400db7b3ea46355c5e6d = L.polyline(
+                [[41.6892652, -83.6230966], [41.6894354, -83.6231035], [41.6895347, -83.623144]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_c700ffb807374c72879e4f9b11df24d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_397c03e9338e47e9a1f2788dc9b923eb = $(`<div id="html_397c03e9338e47e9a1f2788dc9b923eb" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_c700ffb807374c72879e4f9b11df24d2.setContent(html_397c03e9338e47e9a1f2788dc9b923eb);
+        
+
+        poly_line_5e1c8d5a7091400db7b3ea46355c5e6d.bindPopup(popup_c700ffb807374c72879e4f9b11df24d2)
+        ;
+
+        
+    
+    
+            var poly_line_93c5779ffb284edc85d4e828be5477b9 = L.polyline(
+                [[41.6895347, -83.623144], [41.689697, -83.623152]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_1a6e9625635a48e19100f4bdf7b37ee9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a57f8d6ebd3e4caea8303d8af63a303a = $(`<div id="html_a57f8d6ebd3e4caea8303d8af63a303a" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_1a6e9625635a48e19100f4bdf7b37ee9.setContent(html_a57f8d6ebd3e4caea8303d8af63a303a);
+        
+
+        poly_line_93c5779ffb284edc85d4e828be5477b9.bindPopup(popup_1a6e9625635a48e19100f4bdf7b37ee9)
+        ;
+
+        
+    
+    
+            var poly_line_8d59da7409814619b078fdc904d486d5 = L.polyline(
+                [[41.689697, -83.623152], [41.6901498, -83.6231701], [41.690422, -83.623181]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_dbdff39770b14a04ad005a41f9bcd0ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_031e4742a4394e9891b1ff0533ba0972 = $(`<div id="html_031e4742a4394e9891b1ff0533ba0972" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_dbdff39770b14a04ad005a41f9bcd0ca.setContent(html_031e4742a4394e9891b1ff0533ba0972);
+        
+
+        poly_line_8d59da7409814619b078fdc904d486d5.bindPopup(popup_dbdff39770b14a04ad005a41f9bcd0ca)
+        ;
+
+        
+    
+    
+            var poly_line_8c0023101e2b405a9c5d2aba1ba959e1 = L.polyline(
+                [[41.690422, -83.623181], [41.6905272, -83.6231853], [41.6906754, -83.6231914], [41.6906918, -83.6231921], [41.6907854, -83.623196], [41.6912016, -83.6232132], [41.6913148, -83.6232179], [41.691804, -83.623238]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_6130ff054f4846459ebb6a1b57dc5651 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a717d5ddb524615ad0184b2907697ac = $(`<div id="html_1a717d5ddb524615ad0184b2907697ac" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_6130ff054f4846459ebb6a1b57dc5651.setContent(html_1a717d5ddb524615ad0184b2907697ac);
+        
+
+        poly_line_8c0023101e2b405a9c5d2aba1ba959e1.bindPopup(popup_6130ff054f4846459ebb6a1b57dc5651)
+        ;
+
+        
+    
+    
+            var poly_line_338e0d9047934375ba6af4ef0cdc4592 = L.polyline(
+                [[41.691804, -83.623238], [41.692255, -83.6232502], [41.6923667, -83.6232532], [41.6925224, -83.6232574], [41.693064, -83.623272]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_73ce81b32b1344e9b6a7fc50ef52e44e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a104ca0dbefe4cf9ac181ea4177fc12e = $(`<div id="html_a104ca0dbefe4cf9ac181ea4177fc12e" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_73ce81b32b1344e9b6a7fc50ef52e44e.setContent(html_a104ca0dbefe4cf9ac181ea4177fc12e);
+        
+
+        poly_line_338e0d9047934375ba6af4ef0cdc4592.bindPopup(popup_73ce81b32b1344e9b6a7fc50ef52e44e)
+        ;
+
+        
+    
+    
+            var poly_line_991fdf1e50c54d3f8ce3f74e9e5ca15e = L.polyline(
+                [[41.693064, -83.623272], [41.6933808, -83.6232804], [41.6938395, -83.6232926], [41.6940128, -83.6232973], [41.6941786, -83.6233017], [41.6949308, -83.6233217], [41.6951781, -83.6233282], [41.695432, -83.623335]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_e89a00d7ecb04b8aaeadc1b776cbc6fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55bd6a5f21c1462e9652ef7ea9ec333b = $(`<div id="html_55bd6a5f21c1462e9652ef7ea9ec333b" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_e89a00d7ecb04b8aaeadc1b776cbc6fd.setContent(html_55bd6a5f21c1462e9652ef7ea9ec333b);
+        
+
+        poly_line_991fdf1e50c54d3f8ce3f74e9e5ca15e.bindPopup(popup_e89a00d7ecb04b8aaeadc1b776cbc6fd)
+        ;
+
+        
+    
+    
+            var poly_line_bb433af47589448ab6eb0e4ea7247856 = L.polyline(
+                [[41.695432, -83.623335], [41.695885, -83.623347], [41.6960897, -83.6233525], [41.697039, -83.623378], [41.6972959, -83.6233891], [41.6973093, -83.6233897], [41.6979168, -83.623416], [41.6979676, -83.6234182]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_34262ccebb9945eea08184b0a81fc93a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cca57a1288814798af898e90ae311730 = $(`<div id="html_cca57a1288814798af898e90ae311730" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_34262ccebb9945eea08184b0a81fc93a.setContent(html_cca57a1288814798af898e90ae311730);
+        
+
+        poly_line_bb433af47589448ab6eb0e4ea7247856.bindPopup(popup_34262ccebb9945eea08184b0a81fc93a)
+        ;
+
+        
+    
+    
+            var poly_line_1a7daf1c3eda4d628a2093b749fabfa7 = L.polyline(
+                [[41.6979676, -83.6234182], [41.6982367, -83.6234267], [41.6987311, -83.6234423], [41.6990231, -83.6234515], [41.6991678, -83.6234561], [41.7001075, -83.6234857]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_fb732cceadf9499894be2f6c72dbea4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_568dfd6dea1341d8a2a86b79f3e3c367 = $(`<div id="html_568dfd6dea1341d8a2a86b79f3e3c367" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_fb732cceadf9499894be2f6c72dbea4a.setContent(html_568dfd6dea1341d8a2a86b79f3e3c367);
+        
+
+        poly_line_1a7daf1c3eda4d628a2093b749fabfa7.bindPopup(popup_fb732cceadf9499894be2f6c72dbea4a)
+        ;
+
+        
+    
+    
+            var poly_line_8fa5dc3266604af0a286673b3004c26b = L.polyline(
+                [[41.7001075, -83.6234857], [41.7003222, -83.6234934], [41.7006677, -83.6235059], [41.7009632, -83.6235165], [41.7014641, -83.6235346], [41.7015703, -83.6235384], [41.7022608, -83.6235633]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_e2249435f158499fbdd603a52b6f59f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff432accb032449c909faafb6d6aa0af = $(`<div id="html_ff432accb032449c909faafb6d6aa0af" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_e2249435f158499fbdd603a52b6f59f1.setContent(html_ff432accb032449c909faafb6d6aa0af);
+        
+
+        poly_line_8fa5dc3266604af0a286673b3004c26b.bindPopup(popup_e2249435f158499fbdd603a52b6f59f1)
+        ;
+
+        
+    
+    
+            var poly_line_3aa393cd3cc44a1cb688a4e229145ac7 = L.polyline(
+                [[41.7022608, -83.6235633], [41.7022811, -83.6235638], [41.7024937, -83.6235694], [41.7027185, -83.6235752], [41.7032141, -83.6235927], [41.7033308, -83.6235968], [41.7037569, -83.6236068], [41.7040729, -83.6236186], [41.7041039, -83.6236198], [41.7042807, -83.6236265], [41.704347, -83.623629], [41.7045948, -83.6236382], [41.7047498, -83.6236453], [41.7055972, -83.6236753], [41.7059349, -83.6236878], [41.706317, -83.623702]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_17811942f55d4f2492e43e4653dfdbd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e93a66db53944c12bde1ad006037fb2b = $(`<div id="html_e93a66db53944c12bde1ad006037fb2b" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_17811942f55d4f2492e43e4653dfdbd2.setContent(html_e93a66db53944c12bde1ad006037fb2b);
+        
+
+        poly_line_3aa393cd3cc44a1cb688a4e229145ac7.bindPopup(popup_17811942f55d4f2492e43e4653dfdbd2)
+        ;
+
+        
+    
+    
+            var poly_line_fd5c3fcd3fa346f9b672a0753b3bd669 = L.polyline(
+                [[41.706317, -83.623702], [41.7065041, -83.6237076], [41.7067797, -83.6237182], [41.70692, -83.6237202]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_252219952e8b480fb39f6152fa00b7d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dbc5ed97f8d453a8b655bbcfd18c72f = $(`<div id="html_7dbc5ed97f8d453a8b655bbcfd18c72f" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_252219952e8b480fb39f6152fa00b7d4.setContent(html_7dbc5ed97f8d453a8b655bbcfd18c72f);
+        
+
+        poly_line_fd5c3fcd3fa346f9b672a0753b3bd669.bindPopup(popup_252219952e8b480fb39f6152fa00b7d4)
+        ;
+
+        
+    
+    
+            var poly_line_eed83d3365c14aa7a0909e6883ef38c6 = L.polyline(
+                [[41.70692, -83.6237202], [41.7075437, -83.623739], [41.7077938, -83.6237466], [41.7080957, -83.6237557], [41.7081417, -83.6237571], [41.7082758, -83.6237612], [41.7085667, -83.62377], [41.708646, -83.6237724], [41.7090579, -83.6237848], [41.7091361, -83.6237872], [41.7092298, -83.62379], [41.7094562, -83.6237968], [41.7096805, -83.6238036], [41.709957, -83.623812], [41.7104364, -83.6238265], [41.7106832, -83.623834], [41.7107002, -83.6238345], [41.7108688, -83.6238396], [41.711068, -83.6238456], [41.7115508, -83.6238602], [41.7117025, -83.6238648], [41.711844, -83.623869], [41.7122448, -83.6238811], [41.712645, -83.6238932], [41.7128818, -83.6239003], [41.7129875, -83.6239035], [41.7135739, -83.6239212]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_a2be490ecbc0466699956714a9685c81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d12ef5d0f66040e389c5709e22af0ee2 = $(`<div id="html_d12ef5d0f66040e389c5709e22af0ee2" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_a2be490ecbc0466699956714a9685c81.setContent(html_d12ef5d0f66040e389c5709e22af0ee2);
+        
+
+        poly_line_eed83d3365c14aa7a0909e6883ef38c6.bindPopup(popup_a2be490ecbc0466699956714a9685c81)
+        ;
+
+        
+    
+    
+            var poly_line_bd0c11045eb049cabfd570cfe80fbe3f = L.polyline(
+                [[41.7135739, -83.6239212], [41.71461, -83.623968]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_eacdce25ff5645a5bdf57ed66f5c13bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_017133f4503a402c83deb364abc9f694 = $(`<div id="html_017133f4503a402c83deb364abc9f694" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_eacdce25ff5645a5bdf57ed66f5c13bb.setContent(html_017133f4503a402c83deb364abc9f694);
+        
+
+        poly_line_bd0c11045eb049cabfd570cfe80fbe3f.bindPopup(popup_eacdce25ff5645a5bdf57ed66f5c13bb)
+        ;
+
+        
+    
+    
+            var poly_line_59a1d3a3b4a04c0a9516c732a8babf27 = L.polyline(
+                [[41.71461, -83.623968], [41.715296, -83.62399]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_6ea71e72dacb40ce9c418727e4f8592b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_572a84ba5296401990ef500df3aa9013 = $(`<div id="html_572a84ba5296401990ef500df3aa9013" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_6ea71e72dacb40ce9c418727e4f8592b.setContent(html_572a84ba5296401990ef500df3aa9013);
+        
+
+        poly_line_59a1d3a3b4a04c0a9516c732a8babf27.bindPopup(popup_6ea71e72dacb40ce9c418727e4f8592b)
+        ;
+
+        
+    
+    
+            var poly_line_2d7c3b40a6b34b0b8914816a620f0382 = L.polyline(
+                [[41.715296, -83.62399], [41.7159827, -83.624012], [41.7160577, -83.6240151], [41.7164356, -83.6240305], [41.716983, -83.624044]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_831b016e416f433da3ebb22b35f14e1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8274a40f4194c44adff94bba6142ac5 = $(`<div id="html_b8274a40f4194c44adff94bba6142ac5" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_831b016e416f433da3ebb22b35f14e1b.setContent(html_b8274a40f4194c44adff94bba6142ac5);
+        
+
+        poly_line_2d7c3b40a6b34b0b8914816a620f0382.bindPopup(popup_831b016e416f433da3ebb22b35f14e1b)
+        ;
+
+        
+    
+    
+            var poly_line_afa0ba54964947fba21cc90632a3afe6 = L.polyline(
+                [[41.716983, -83.624044], [41.7173076, -83.6240545], [41.7178034, -83.6240705], [41.7178594, -83.6240723], [41.7179429, -83.624075], [41.7180195, -83.6240775], [41.718685, -83.624099]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_d945cc17d53b44d18665cbbfab4c84a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e25089c47a8f4bfc86219277d2956e70 = $(`<div id="html_e25089c47a8f4bfc86219277d2956e70" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_d945cc17d53b44d18665cbbfab4c84a6.setContent(html_e25089c47a8f4bfc86219277d2956e70);
+        
+
+        poly_line_afa0ba54964947fba21cc90632a3afe6.bindPopup(popup_d945cc17d53b44d18665cbbfab4c84a6)
+        ;
+
+        
+    
+    
+            var poly_line_5ce110eb2c83458c86024593587f773c = L.polyline(
+                [[41.718685, -83.624099], [41.719087, -83.624112]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_4d5f7a9540aa4cf6bb97949bd08495e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19adcb2da2724a5cb60970f214431482 = $(`<div id="html_19adcb2da2724a5cb60970f214431482" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_4d5f7a9540aa4cf6bb97949bd08495e7.setContent(html_19adcb2da2724a5cb60970f214431482);
+        
+
+        poly_line_5ce110eb2c83458c86024593587f773c.bindPopup(popup_4d5f7a9540aa4cf6bb97949bd08495e7)
+        ;
+
+        
+    
+    
+            var poly_line_d9220f85cbd44566b1a81427502dad95 = L.polyline(
+                [[41.719087, -83.624112], [41.719894, -83.624138]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_dfcae0b19b0e4c6d8cb9906802828228 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7d47e2cd8804a32aa6a9cf1cd0d96d6 = $(`<div id="html_b7d47e2cd8804a32aa6a9cf1cd0d96d6" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_dfcae0b19b0e4c6d8cb9906802828228.setContent(html_b7d47e2cd8804a32aa6a9cf1cd0d96d6);
+        
+
+        poly_line_d9220f85cbd44566b1a81427502dad95.bindPopup(popup_dfcae0b19b0e4c6d8cb9906802828228)
+        ;
+
+        
+    
+    
+            var poly_line_2c72bd3992b14a07a952ae202db59bac = L.polyline(
+                [[41.719894, -83.624138], [41.7200714, -83.6241434], [41.7206644, -83.6241615], [41.7207959, -83.6241655]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_bb5c5a552ab44a64a48551bb05890b69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_862d83aed05545e6bcbd215f415c8b3b = $(`<div id="html_862d83aed05545e6bcbd215f415c8b3b" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_bb5c5a552ab44a64a48551bb05890b69.setContent(html_862d83aed05545e6bcbd215f415c8b3b);
+        
+
+        poly_line_2c72bd3992b14a07a952ae202db59bac.bindPopup(popup_bb5c5a552ab44a64a48551bb05890b69)
+        ;
+
+        
+    
+    
+            var poly_line_edc45d315b784d309e6862b066ec436e = L.polyline(
+                [[41.7207959, -83.6241655], [41.720931, -83.6241723], [41.7212408, -83.6241879]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_024c125d8b1b4c22b9ff60035058648e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a5e29bc3b274389ba699f54f8822146 = $(`<div id="html_4a5e29bc3b274389ba699f54f8822146" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_024c125d8b1b4c22b9ff60035058648e.setContent(html_4a5e29bc3b274389ba699f54f8822146);
+        
+
+        poly_line_edc45d315b784d309e6862b066ec436e.bindPopup(popup_024c125d8b1b4c22b9ff60035058648e)
+        ;
+
+        
+    
+    
+            var poly_line_f09c49f9f63c495e9a0f0f8d5e0bf092 = L.polyline(
+                [[41.7212408, -83.6241879], [41.7216204, -83.624207], [41.7217914, -83.6242156], [41.7221446, -83.6242334], [41.722633, -83.624258]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_448ccc93cfe448de8eb3758e74bcdf05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27d796a397f048b394c07185647ef784 = $(`<div id="html_27d796a397f048b394c07185647ef784" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_448ccc93cfe448de8eb3758e74bcdf05.setContent(html_27d796a397f048b394c07185647ef784);
+        
+
+        poly_line_f09c49f9f63c495e9a0f0f8d5e0bf092.bindPopup(popup_448ccc93cfe448de8eb3758e74bcdf05)
+        ;
+
+        
+    
+    
+            var poly_line_5e6e9352a74e40cf8ce39dc32b924474 = L.polyline(
+                [[41.722633, -83.624258], [41.7227009, -83.6242614], [41.723085, -83.6242804], [41.7232209, -83.6242872], [41.723883, -83.62432]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_a2e314d650674b4aa7fd31b0f97a3bba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e42b4830ddcf45a7b65d147f28bf020b = $(`<div id="html_e42b4830ddcf45a7b65d147f28bf020b" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_a2e314d650674b4aa7fd31b0f97a3bba.setContent(html_e42b4830ddcf45a7b65d147f28bf020b);
+        
+
+        poly_line_5e6e9352a74e40cf8ce39dc32b924474.bindPopup(popup_a2e314d650674b4aa7fd31b0f97a3bba)
+        ;
+
+        
+    
+    
+            var poly_line_1e4e339d710a4607b42441a22bb6789d = L.polyline(
+                [[41.723883, -83.62432], [41.724291, -83.6243393]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_6de8ba8ebc2b4f1792c20829771188f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b32c93bb73246529cb310ebf24f0c32 = $(`<div id="html_8b32c93bb73246529cb310ebf24f0c32" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_6de8ba8ebc2b4f1792c20829771188f9.setContent(html_8b32c93bb73246529cb310ebf24f0c32);
+        
+
+        poly_line_1e4e339d710a4607b42441a22bb6789d.bindPopup(popup_6de8ba8ebc2b4f1792c20829771188f9)
+        ;
+
+        
+    
+    
+            var poly_line_c1d83a4f41f0402b905090d39fa4fdcb = L.polyline(
+                [[41.724291, -83.6243393], [41.7246283, -83.6243552]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_c28a3200bdb240c380156490d9ac9161 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba969d721a694f13ad8b4d335e8cdb49 = $(`<div id="html_ba969d721a694f13ad8b4d335e8cdb49" style="width: 100.0%; height: 100.0%;">"Secor Road"</div>`)[0];
+            popup_c28a3200bdb240c380156490d9ac9161.setContent(html_ba969d721a694f13ad8b4d335e8cdb49);
+        
+
+        poly_line_c1d83a4f41f0402b905090d39fa4fdcb.bindPopup(popup_c28a3200bdb240c380156490d9ac9161)
+        ;
+
+        
+    
+    
+            var poly_line_18bb2ff62e6b4a538a666512c02be454 = L.polyline(
+                [[41.7246283, -83.6243552], [41.7246951, -83.624674], [41.7247656, -83.624908], [41.7248676, -83.6251425], [41.7249676, -83.625289], [41.724987, -83.6253174], [41.7251372, -83.6254979], [41.7252695, -83.6256369], [41.725465, -83.6258423], [41.72573, -83.626137]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_aea6a04046c54bf689c78cc622f0c21f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_396e5f38a6064e4f9089e6947b73391e = $(`<div id="html_396e5f38a6064e4f9089e6947b73391e" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_aea6a04046c54bf689c78cc622f0c21f.setContent(html_396e5f38a6064e4f9089e6947b73391e);
+        
+
+        poly_line_18bb2ff62e6b4a538a666512c02be454.bindPopup(popup_aea6a04046c54bf689c78cc622f0c21f)
+        ;
+
+        
+    
+    
+            var poly_line_012b2407b3874ee39e8791cff12a4b55 = L.polyline(
+                [[41.72573, -83.626137], [41.726518, -83.626962]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_8dedab2050d141478439b128d6d62444 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bab1eb26023b47e19db3eeb954b22943 = $(`<div id="html_bab1eb26023b47e19db3eeb954b22943" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_8dedab2050d141478439b128d6d62444.setContent(html_bab1eb26023b47e19db3eeb954b22943);
+        
+
+        poly_line_012b2407b3874ee39e8791cff12a4b55.bindPopup(popup_8dedab2050d141478439b128d6d62444)
+        ;
+
+        
+    
+    
+            var poly_line_9b6cc4c0e1234b99a70201a3a0cdc6f8 = L.polyline(
+                [[41.726518, -83.626962], [41.727236, -83.627732]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_3fb97c04cdb04d0497fa58d3defe2a81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c716bfa6f0c747118244f9f3c1d0ae29 = $(`<div id="html_c716bfa6f0c747118244f9f3c1d0ae29" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_3fb97c04cdb04d0497fa58d3defe2a81.setContent(html_c716bfa6f0c747118244f9f3c1d0ae29);
+        
+
+        poly_line_9b6cc4c0e1234b99a70201a3a0cdc6f8.bindPopup(popup_3fb97c04cdb04d0497fa58d3defe2a81)
+        ;
+
+        
+    
+    
+            var poly_line_f0abda7fe6834eaf8c6836a151e35db6 = L.polyline(
+                [[41.727236, -83.627732], [41.7274159, -83.6279186], [41.7279612, -83.6284845], [41.729511, -83.630126], [41.7300734, -83.6307018], [41.730476, -83.6311109], [41.730697, -83.6313093], [41.7308218, -83.6314213], [41.7309137, -83.6315039], [41.7318656, -83.6324353], [41.7324492, -83.6330096], [41.7328439, -83.6333526], [41.733078, -83.6335561], [41.7332053, -83.633677], [41.7333346, -83.6338243]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_7163e71ffa994f26beeaa675796a7a85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_165c8263f9d54bf8bb9bd845cb692df5 = $(`<div id="html_165c8263f9d54bf8bb9bd845cb692df5" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_7163e71ffa994f26beeaa675796a7a85.setContent(html_165c8263f9d54bf8bb9bd845cb692df5);
+        
+
+        poly_line_f0abda7fe6834eaf8c6836a151e35db6.bindPopup(popup_7163e71ffa994f26beeaa675796a7a85)
+        ;
+
+        
+    
+    
+            var poly_line_8b82992953f24671ac6a1902805cc7da = L.polyline(
+                [[41.7333346, -83.6338243], [41.7333898, -83.6339119], [41.7334673, -83.6340416], [41.7335707, -83.6342241], [41.7336915, -83.6344664], [41.7339512, -83.6350356], [41.7340053, -83.6351542], [41.7344324, -83.6360901]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_e7c53e1d48cd4997874768231c49320c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c04fdcc48a04b7d8997bb640d977b8e = $(`<div id="html_8c04fdcc48a04b7d8997bb640d977b8e" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_e7c53e1d48cd4997874768231c49320c.setContent(html_8c04fdcc48a04b7d8997bb640d977b8e);
+        
+
+        poly_line_8b82992953f24671ac6a1902805cc7da.bindPopup(popup_e7c53e1d48cd4997874768231c49320c)
+        ;
+
+        
+    
+    
+            var poly_line_8d30b8ebb5ec4c7ea35545506b35f07b = L.polyline(
+                [[41.7344324, -83.6360901], [41.7353655, -83.6383773], [41.7357535, -83.6393285], [41.7360137, -83.6399649], [41.7360976, -83.6401643], [41.7361614, -83.640302], [41.7362277, -83.6404327]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_d5f3ff26795b470e8a89cedc8c44f1f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03e84de248a24e66aba49d29e74bbb43 = $(`<div id="html_03e84de248a24e66aba49d29e74bbb43" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_d5f3ff26795b470e8a89cedc8c44f1f6.setContent(html_03e84de248a24e66aba49d29e74bbb43);
+        
+
+        poly_line_8d30b8ebb5ec4c7ea35545506b35f07b.bindPopup(popup_d5f3ff26795b470e8a89cedc8c44f1f6)
+        ;
+
+        
+    
+    
+            var poly_line_3881bba082b24fba856091cc5fe26143 = L.polyline(
+                [[41.7362277, -83.6404327], [41.7362973, -83.6405262], [41.7363878, -83.6406501], [41.7365602, -83.6408598]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_e9c9e3889f104976a6bfe44360e3681a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2caec5648234d61bacb507636724871 = $(`<div id="html_b2caec5648234d61bacb507636724871" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_e9c9e3889f104976a6bfe44360e3681a.setContent(html_b2caec5648234d61bacb507636724871);
+        
+
+        poly_line_3881bba082b24fba856091cc5fe26143.bindPopup(popup_e9c9e3889f104976a6bfe44360e3681a)
+        ;
+
+        
+    
+    
+            var poly_line_07784ee5a0dd4236aa027d7f3b695a76 = L.polyline(
+                [[41.7365602, -83.6408598], [41.7367205, -83.6410498], [41.7371629, -83.6415485], [41.7372517, -83.6416486]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_68d0617dd2cb4537a63e1e09071bac3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5ab873d3bcc4de399e0172bf7cb0603 = $(`<div id="html_c5ab873d3bcc4de399e0172bf7cb0603" style="width: 100.0%; height: 100.0%;">"Whiteford Center Road"</div>`)[0];
+            popup_68d0617dd2cb4537a63e1e09071bac3d.setContent(html_c5ab873d3bcc4de399e0172bf7cb0603);
+        
+
+        poly_line_07784ee5a0dd4236aa027d7f3b695a76.bindPopup(popup_68d0617dd2cb4537a63e1e09071bac3d)
+        ;
+
+        
+    
+    
+            map_74736162bcf442198b2d4d40a544bc44.fitBounds(
+                [[41.662946, -83.6416486], [41.7372517, -83.619567]],
+                {}
+            );
+        
+    
+            var marker_44a3e6fc3472422d941443b94349c8b5 = L.marker(
+                [41.6625764, -83.6189921],
+                {}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_07ca0c34b7e646b6b5e2d898d9aa6721 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a4b3568a8884745955ec30375df2804 = $(`<div id="html_0a4b3568a8884745955ec30375df2804" style="width: 100.0%; height: 100.0%;">Start</div>`)[0];
+            popup_07ca0c34b7e646b6b5e2d898d9aa6721.setContent(html_0a4b3568a8884745955ec30375df2804);
+        
+
+        marker_44a3e6fc3472422d941443b94349c8b5.bindPopup(popup_07ca0c34b7e646b6b5e2d898d9aa6721)
+        ;
+
+        
+    
+    
+            var marker_530c69758b1644d08ed447cebcf55251 = L.marker(
+                [41.7378024, -83.642602],
+                {}
+            ).addTo(map_74736162bcf442198b2d4d40a544bc44);
+        
+    
+        var popup_ce632277eb15454e94e22c14d376cee7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80b2ecc0fef045e9afc2a6c3a2af118c = $(`<div id="html_80b2ecc0fef045e9afc2a6c3a2af118c" style="width: 100.0%; height: 100.0%;">End</div>`)[0];
+            popup_ce632277eb15454e94e22c14d376cee7.setContent(html_80b2ecc0fef045e9afc2a6c3a2af118c);
+        
+
+        marker_530c69758b1644d08ed447cebcf55251.bindPopup(popup_ce632277eb15454e94e22c14d376cee7)
+        ;
+
+        
+    
+    
+        var popup_4bda7a05504a4857ab02ee18855c95b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e02a477e80b34e788903857af1be3b6b = $(`<div id="html_e02a477e80b34e788903857af1be3b6b" style="width: 100.0%; height: 100.0%;">Travel Time: [63198445, 63190856, 63224787, 63225021, 63202857, 6126946774, 63202859, 63180391, 63202862, 63202864, 63202866, 63202868, 63183751, 63183790, 63200227, 63200234, 63189960, 63189967, 63162687, 63202875, 63202876, 63186728, 63186736, 63166432, 63202879, 63202881, 2136832224, 9446023521, 1733673871, 9446023676, 2413514060, 63202883, 63186405, 63159227, 63156660, 9446001652, 9577983318, 9446001651, 63178352, 63202895, 63199567, 63202897, 63202899, 63202906, 63202910, 63198923, 63202919, 2283232152, 63198781, 63202920, 63177655, 63202922, 63202925, 63202927, 63202929, 63188916, 6484581391, 63202931, 63202933, 2063288282, 63202936, 63238418, 63164553, 63238421, 185357359, 185357376, 185357380, 185357383, 185329396] minutes, Travel Length: [63198445, 63198448, 63198450, 63198452, 63198475, 63224791, 2136832424, 63191974, 63183747, 63183795, 63162685, 63166430, 63166432, 63202879, 63202881, 2136832224, 9446023521, 1733673871, 9446023676, 2413514060, 63202883, 63186405, 63159227, 63156660, 9446001652, 9577983318, 9446001651, 63178352, 63202895, 63199567, 63202897, 63202899, 63202906, 63202910, 63198923, 63202919, 2283232152, 63198781, 63202920, 63177655, 63202922, 63202925, 63202927, 63202929, 63188916, 6484581391, 63202931, 63202933, 2063288282, 63202936, 63238418, 63164553, 63238421, 185357359, 185357376, 185357380, 185357383, 185329396] meters</div>`)[0];
+            popup_4bda7a05504a4857ab02ee18855c95b6.setContent(html_e02a477e80b34e788903857af1be3b6b);
+        
+
+        map_74736162bcf442198b2d4d40a544bc44.bindPopup(popup_4bda7a05504a4857ab02ee18855c95b6)
+        ;
+
+        
+    
+</script>
