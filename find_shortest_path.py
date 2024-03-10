@@ -10,13 +10,14 @@ Steps:
     - Geocode the addresses via "geopy" python module, it's also possible via Nominatum, or HERE API
     - Plot it on a map to get an idea using "folium" module
     - Find shortest route between locations using OpenRouteService.org api
-    - Plot the route on folium module
+    - Plot the route using folium module
 """
 
 import sys
 import osmnx as ox
 import networkx as nx
 from shapely.geometry import box, Point
+import folium
 ox.config(use_cache=True, log_console=True)
 
 def geocode(address):
@@ -66,20 +67,15 @@ def find_length_and_time(G, travel_length, travel_time):
         print(f'Error: {e}')
     return route_length, route_time
 
-def route_plotting(G, travel_length, travel_time):
-    """Plot the shortest path lenght and shortest path time."""
-    if travel_length and travel_time:
-        fig, ax = ox.plot_graph_routes(
-            G,
-            routes=[travel_length, travel_time],
-            route_colors=["r", "y"],
-            route_linewidth=6,
-            node_size=0
-        )
-    elif travel_length:
-        ox.plot_route_folium(G, travel_length, popup_attribute='length')
-    elif travel_time:
-        ox.plot_route_folium(G, travel_time, popup_attribute='travel_time')
+def route_plotting(G, origin_loc, destination_loc, travel_length, travel_time):
+    """Plot the shortest path between two addresses."""
+    if travel_length or travel_time:
+        # Plot the route on a Folium map with travel time and length
+        m = ox.plot_route_folium(G, travel_length, route_map=folium.Map(), popup_attribute='name') #name is the street name
+        folium.Marker(origin_loc, popup='Start').add_to(m)
+        folium.Marker(destination_loc, popup='End').add_to(m)
+        folium.Popup(f'Travel Time: {travel_time} minutes, Travel Length: {travel_length} meters').add_to(m)
+    return m
 
 
 def main():
@@ -93,6 +89,8 @@ def main():
     if not all([orig_x, orig_y, dest_x, dest_y]):
         print("Unable to geocode one or both addresses. Exiting...")
         sys.exit()
+    origin_loc = (orig_x, orig_y)
+    destination_loc = (dest_x, dest_y)
     # Create bounding box
     bbox = boundary_constructor(orig_x, orig_y, dest_x, dest_y) 
     # Retrieve OSM data
@@ -106,9 +104,17 @@ def main():
     # find route length and route time
     route_length, route_time = find_length_and_time(G, travel_length, travel_time)
     print(f"Shortest travel length:{(route_length * 0.000621): .1f} miles and takes {(route_time/60 +0.5): .1f} minutes") 
-    # plot routes
-    route_plotting(G, travel_length, travel_time)
+    # plot route map
+    route_map = route_plotting(G, origin_loc, destination_loc, travel_length, travel_time)
+    # Save the map to an HTML file
+    route_map.save('shortest_path_map.html')
+    print('Done')
+    return route_map
 
 
 if __name__ == "__main__":
-    main()
+    route_map=main()
+
+
+# plot the webmap
+route_map
